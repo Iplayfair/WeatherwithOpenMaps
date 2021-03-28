@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+li, a, button{
+font-family: "Montserrat", sans-serif;
+font-weight: 500;
+font-size: 16px;
+color: #edf0f1;
+text-decoration: none ;
+
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #24252A;
+}
+
+.logo{
+    cursor: pointer;
+    width: 150px;
+    height: 100px;
+    color: white;
+    margin-right: auto;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a{
+    transition: all 0.3 ease 0s;
+
+}
+
+.nav_links li a:hover{
+    color: #0088a9 ;
+
+}
+
+
+
+
+
+button{
+    margin-left:20px ;
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+    width: 200px;
+}
+
+button:hover{
+
+    background-color: rgba(0, 136, 169, 0.5);
+}
+
+input {
+    border: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: 12px;
+    border-radius: 3px;
+    width: 300px;
+    outline: none;
+
+}
+input:focus::value{
+    color: transparent;
+}
+
+input::value{
+    color: #222;
+    transition: color 0.3s ease ;
+}
+
+.output{
+    margin-top: 40px;
+}
+
+heading{
+    margin-top: 40px;
+}
+
+
+body{
+    background-color:grey;
+}
+
+#input{
+    margin-top: 50px;
+}
+
+
+#mapid { 
+    height: 500px;
+    margin-top: 50px;
+    
+    
+    
+
+
+}
+
+
+#main{
+font-family: sans-serif;
+text-align: center;
+
+}
+
+p{
+    font-family: "Montserrat",sans-serif;
+}
+
+#stadt{
+
+    font-weight: bolder;
+    font-size: large;
+}
+
+#temp{
+    font-size: large;
+    font-weight: bold;
+}
+
