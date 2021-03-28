@@ -30,7 +30,7 @@ async function showPosition(position) {
 
   console.log(lat,lng);
 
-  let api_main = 'http://api.openweathermap.org/data/2.5/weather?';
+  let api_main = 'https://api.openweathermap.org/data/2.5/weather?';
   let api_key = '&APPID=55a6e7d291b29415e1bbe29d9bf3b7ae&units=metric';
   let api_input = "lat=" + lat + "&lon=" + lng
   let api = api_main + api_input +api_key;
@@ -89,7 +89,7 @@ async function getAPI() {
 
   
 //API generieren
- let api_main = 'http://api.openweathermap.org/data/2.5/weather?';
+ let api_main = 'https://api.openweathermap.org/data/2.5/weather?';
  let api_key = '&APPID=55a6e7d291b29415e1bbe29d9bf3b7ae&units=metric';
  let api_input = "q=" + document.getElementById('input').value;
 
@@ -187,7 +187,7 @@ function checkTaste(e) {
   let coordinates = L.popup().setLatLng(e.latlng).getLatLng();
   
    
-  let api_main = 'http://api.openweathermap.org/data/2.5/weather?';
+  let api_main = 'https://api.openweathermap.org/data/2.5/weather?';
   let api_key = '&APPID=55a6e7d291b29415e1bbe29d9bf3b7ae&units=metric';
   let api_input = "lat=" + coordinates.lat + "&lon=" + coordinates.lng
   let api = api_main + api_input +api_key;
