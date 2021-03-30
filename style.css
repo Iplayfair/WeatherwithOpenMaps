@@ -104,14 +104,33 @@ body{
     margin-top: 50px;
 }
 
+#location
+{
+    background-color: white;
+    background: none !important;
+    text-align: end;
+    position: relative;
+    left: -80px;
+    
+    height: 40px;
+    width: 3px;
+    
+    
+    
+}
+
+#locationPic{
+    position: relative;
+    top: 5px;
+    height: 20px;
+    width: 20px;
+    
+}
+
 
 #mapid { 
     height: 500px;
     margin-top: 50px;
-    
-    
-    
-
 
 }
 

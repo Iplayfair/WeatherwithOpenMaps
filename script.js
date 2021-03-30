@@ -1,16 +1,17 @@
 
   let button = document.getElementById('submit');
-  
+  let tracking = document.getElementById('location')
   //Map inizalisierung
   let mymap = L.map('mapid').setView([0, 0], 12);
   let firstTime = true;
   
 
-/* window.addEventListener('load',getAPI);
+window.addEventListener('load',getAPI);
 window.addEventListener('load',map);
-window.addEventListener('load',backgroundChange); */
-window.addEventListener('load',getPosition);
+window.addEventListener('load',backgroundChange);
+//window.addEventListener('load',getPosition);
 button.addEventListener('click',getAPI,backgroundChange,map);
+tracking.addEventListener('click',getPosition);
 
  
 
