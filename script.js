@@ -125,7 +125,6 @@ async function backgroundChange(){
     if(Math.round(data.main.temp *10)/10<= 5){
 
       document.body.style.background = "url('Frühling.jpg') ";
-      document.body.style.color = "white";
       document.getElementById('mapid').style.opacity = "1";
       document.getElementById('mapid').style.boxSizing = "border-box";
       document.getElementById('mapid').style.borderRadius = "15px 15px 15px 15px";
@@ -133,7 +132,6 @@ async function backgroundChange(){
     }
       else if(Math.round(data.main.temp *10)/10 >= 20){
         document.body.style.background = "url('Sommer.jpg') ";
-        document.body.style.color = "white";
         document.getElementById('mapid').style.opacity = "1";
         document.getElementById('mapid').style.boxSizing = "border-box";
         document.getElementById('mapid').style.borderRadius = "15px 15px 15px 15px"
