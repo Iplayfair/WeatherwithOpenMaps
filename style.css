@@ -1,165 +1,173 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-li, a, button{
-font-family: "Montserrat", sans-serif;
-font-weight: 500;
-font-size: 16px;
-color: #edf0f1;
-text-decoration: none ;
-
+.grid {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "input"
+    "map"
+    "footer";
 }
 
-header{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 30px 10%;
-    background-color: #24252A;
+.nav {
+  grid-area: header;
 }
 
-.logo{
-    cursor: pointer;
-    width: 150px;
-    height: 100px;
-    color: white;
-    margin-right: auto;
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
 }
 
-.nav_links li{
-    display: inline-block;
-    padding: 0px 20px;
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #24252a;
 }
 
-.nav_links li a{
-    transition: all 0.3 ease 0s;
-
+.logo {
+  cursor: pointer;
+  width: 150px;
+  height: 100px;
+  color: white;
+  margin-right: auto;
 }
 
-.nav_links li a:hover{
-    color: #0088a9 ;
-
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
 }
 
-
-
-
-
-button{
-    margin-left:20px ;
-    padding: 9px 25px;
-    background-color: rgba(0, 136, 169, 1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3 ease 0s;
-    width: 200px;
+.nav_links li a {
+  transition: all 0.3 ease 0s;
 }
 
-button:hover{
+.nav_links li a:hover {
+  color: #0088a9;
+}
 
-    background-color: rgba(0, 136, 169, 0.5);
+button {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3 ease 0s;
+  width: 200px;
+}
+
+button:focus{
+  outline: none;
+}
+
+button:hover {
+  background-color: rgba(0, 136, 169, 0.5);
+}
+
+.main {
+  grid-area: input;
+  justify-content: center;
+  align-items: center;
 }
 
 input {
-    border: none;
-    appearance: none;
-    background: #f2f2f2;
-    padding: 12px;
-    border-radius: 3px;
-    width: 300px;
-    outline: none;
-
+  border: none;
+  appearance: none;
+  background: #f2f2f2;
+  padding: 12px;
+  border-radius: 3px;
+  width: 300px;
+  outline: none;
 }
-input:focus::value{
-    color: transparent;
-}
-
-input::value{
-    color: #222;
-    transition: color 0.3s ease ;
+input:focus::value {
+  color: transparent;
 }
 
-.output{
+input::value {
+  color: #222;
+  transition: color 0.3s ease;
+}
+
+.output {
+  margin-top: 40px;
+}
+
+/* heading{
     margin-top: 40px;
+} */
+
+body {
+  background-color: grey;
 }
 
-heading{
-    margin-top: 40px;
+#submit {
+  position: relative;
+  right: 45px;
 }
 
-
-body{
-    background-color:grey;
+#input {
+  margin-top: 50px;
 }
 
-#submit{
-    position: relative;
-    right: 45px;
+#location {
+  background-color: white;
+  background: none !important;
+  text-align: center;
+  position: relative;
+  left: -80px;
+
+  height: 40px;
+  width: 3px;
 }
 
-#input{
-    margin-top: 50px;
+#locationPic {
+  position: relative;
+  top: 5px;
+  height: 20px;
+  width: 20px;
 }
 
-#location
-{
-    background-color: white;
-    background: none !important;
-    text-align: end;
-    position: relative;
-    left: -80px;
-    
-    height: 40px;
-    width: 3px;
-    
-    
-    
+.map {
+  grid-area: map;
+  justify-content: center;
+  align-items: center;
 }
 
-#locationPic{
-    position: relative;
-    top: 5px;
-    height: 20px;
-    width: 20px;
-    
+#mapid {
+  height: 500px;
+  margin-top: 50px;
 }
 
-
-#mapid { 
-    height: 500px;
-    margin-top: 50px;
-
+#main {
+  font-family: sans-serif;
+  text-align: center;
 }
 
-
-#main{
-font-family: sans-serif;
-text-align: center;
-
+p {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  right: 30px;
 }
 
-p{
-    font-family: "Montserrat",sans-serif;
-    position: relative;
-    right: 30px;
+#stadt {
+  font-weight: bolder;
+  font-size: large;
 }
 
-#stadt{
-
-    font-weight: bolder;
-    font-size: large;
+#temp {
+  font-size: large;
+  font-weight: bold;
 }
-
-#temp{
-    font-size: large;
-    font-weight: bold;
-}
-
